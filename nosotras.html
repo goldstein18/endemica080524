@@ -197,6 +197,7 @@
 								<li><a href="servicios.html">Servicios</a></li>
 								<li><a  id="bolder" href="nosotras.html">Nosotras</a></li>
 								<li><a href="contact.html">Contacto</a></li>
+								<li><a href="https://enemicaingles.vercel.app">Inglés &#127482;&#127480;</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -232,6 +233,7 @@
 					<li><a href="servicios.html">Servicios</a></li>
 					<li><a  id="bolder" href="nosotras.html">Nosotras</a></li>
 					<li><a href="contact.html">Contacto</a></li>
+					<li><a href="https://enemicaingles.vercel.app">Inglés &#127482;&#127480;</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -513,28 +515,27 @@
 	<div class="witr_about_area" style="padding: 40px 0px;">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 col-md-12 col-sm-12">
+
+
+				<!--<div class="col-lg-6 col-md-12 col-sm-12">
 					<div class="single_image witr_righti">
-						<a href="https://www.linkedin.com/in/fabiola-figueroa-navarro-77971a10b/
-						" target="_blank"><img src="new_icons/fabiola.png" alt="images"
-							style=" float: right; height:100%;"></a>
+						<a href="https://www.linkedin.com/in/fabiola-figueroa-navarro-77971a10b/" target="_blank" id="fabiolaLink">
+							<img  id="fabiolaImage"src="new_icons/fabiola.png" alt="images" style=" float: right; height:100%;"></a>
 
 					</div>
-					<!--<div style="text-align: center;
-    height: 100px;
-    width: 100%;
-/*    background: red;*/
-    float: inline-end;">
-						<a href="https://www.linkedin.com/in/fabiola-figueroa-navarro-77971a10b/" target="_blank"> <img
-								src="img/Nuestras Expertas Icon LinkedIn.png"
-								alt="images" style="height:30px;
-					width: 30px!important; margin-top: 30px;"></a>
-					</div>-->
+				</div>-->
+				<div class="col-lg-6 col-md-12 col-sm-12">
+					<a href="https://www.linkedin.com/in/fabiola-figueroa-navarro-77971a10b/" target="_blank">
+						<div class="single_image witr_righti">
+							<img src="new_icons/fabiola.png" alt="images"
+							style=" float: right; height: 100%;">
 
-
-
-
+						</div>
+					</a>
+				
 				</div>
+
+
 				<div class="col-lg-6 col-md-12 col-sm-12">
 					<div class="witr_text_widget witr_about_widget">
 						<div class="witr_text_widget_inner">
@@ -622,23 +623,17 @@
 						</div>
 					</div>
 				</div>
-	<!--HERE--><div class="col-lg-6 col-md-12 col-sm-12">
-					<a href="https://www.linkedin.com/in/kayla-defino-7b5303138/" target="_blank"><div class="single_image witr_righti">
-					<img src="new_icons/kayla.png" alt="images"
+	<!--HERE-->
+				<div class="col-lg-6 col-md-12 col-sm-12">
+					<a href="https://www.linkedin.com/in/kayla-defino-7b5303138/" target="_blank">
+						<div class="single_image witr_righti">
+							<img src="new_icons/kayla.png" alt="images"
 							style=" float: right; height: 100%;">
 
-					</div></a>
-					<!--<div style="text-align: center;
-						height: 100px;
-						width: 100%;
-					/*    background: red;*/
-						float: inline-end;">
-						<a href="https://www.linkedin.com/in/kayla-defino-7b5303138/
-						" target="_blank"> <img
-								src="img/Nuestras Expertas Icon LinkedIn.png"
-								alt="images" style="height:30px;
-					width: 30px!important; margin-top: 30px;"></a>
-					</div> -->
+						</div>
+					</a>
+				
+				</div>
 
 
 
@@ -748,6 +743,22 @@
 	<script src="assets/js/jquery.meanmenu.js"></script>
 	<script src="assets/js/ajax-mail.js"></script>
 	<script src="assets/js/theme.js"></script>
+	<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const imageLink = document.getElementById('fabiolaLink');
+            const image = document.getElementById('fabiolaImage');
+
+            image.addEventListener('click', function(event) {
+                event.stopPropagation();
+                window.open(imageLink.href, '_blank');
+            });
+
+            // Additional safeguard for mobile devices
+            imageLink.addEventListener('touchstart', function(event) {
+                window.open(imageLink.href, '_blank');
+            });
+        });
+    </script>
 
 </body>
 
