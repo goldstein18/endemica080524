@@ -573,8 +573,9 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
 }
 ::selection {
     background: #4fc1f0;
-    color: #666;
+    color: #0A4231 !important;
     text-shadow: none;
+    font-weight: bold !important;
 }
 ::-moz-placeholder {
     color: #666;
