@@ -181,6 +181,18 @@
 			display: none;
 		}
 
+		.bolderproof {
+			color: #0A4231 !important;
+    font-weight: bold !important;
+		}
+		.bolderproof:focus,
+.bolderproof:active {
+    color: #0A4231 !important;
+    font-weight: bold !important;
+    outline: none !important; /* Remueve el borde de enfoque predeterminado del navegador */
+    text-shadow: none !important; /* Asegura que no haya sombra de texto que pueda afectar la apariencia */
+}
+
 
 	</style>
 	<style type="text/css">
@@ -195,6 +207,7 @@
 			color: white;
 
 		}
+
 	</style>
 	
 <body>
@@ -317,7 +330,7 @@
 		<div class="row">
 			<div class="col-lg-5 col-md-12 col-sm-12">
 				<div  id="home-image"class="single_image witr_righti" style="display: flex; justify-content: right;">
-					<img id="image-mobile-edit"src="img/shake.png" alt="" style="max-width: 40%; max-height: 300px;">
+					<img id="image-mobile-edit"src="img/shake.png" alt="" style="max-width: 70%; position:relative; bottom:40px;"> <!--max-height: 300px;-->
 				</div> 				
 			</div>			
 			<div class="col-lg-7 col-md-12 col-sm-12">
@@ -355,10 +368,12 @@
 						</li>
 						<br>
 						<li>
-							<span style="color:#0A4231; font-weight: bold;">
+							<span class="bolderproof" tabindex="0">
 								Ofrecemos servicios innovadores para explotar la transformación
 que los proyectos de alto impacto social generan.
 							</span>
+							<p class="bolderproof" tabindex="0">Ofrecemos servicios innovadores para explotar la transformación
+								que los proyectos de alto impacto social generan.</p>
 						</li>
 					</ul>
 				</div>
@@ -529,7 +544,7 @@ que los proyectos de alto impacto social generan.
 								los niveles de las organizaciones a
 								través de enriquecedores cursos. </p>		
 							<div class="service-btn">
-								<a href="servicios.html#cap" style="background-color: #ffbc14; color: white;">Leer más
+								<a href="servicios.html#cap" style="background-color: #ffbc14; color: white; margin-top:30px;">Leer más
 								</a>
 							</div>
 						</div> 						
@@ -1255,6 +1270,31 @@ que los proyectos de alto impacto social generan.
         <script src="assets/js/jquery.meanmenu.js"></script>
         <script src="assets/js/ajax-mail.js"></script>		
         <script src="assets/js/theme.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				var boldText = document.querySelector('.bolderproof');
+	
+				boldText.addEventListener('mousedown', function() {
+					this.style.fontWeight = 'bold';
+					this.style.color = '#0A4231';
+				});
+	
+				boldText.addEventListener('mouseup', function() {
+					this.style.fontWeight = 'bold';
+					this.style.color = '#0A4231';
+				});
+	
+				boldText.addEventListener('focus', function() {
+					this.style.fontWeight = 'bold';
+					this.style.color = '#0A4231';
+				});
+	
+				boldText.addEventListener('blur', function() {
+					this.style.fontWeight = 'bold';
+					this.style.color = '#0A4231';
+				});
+			});
+		</script>
 	
 
 		<style>
