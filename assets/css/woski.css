@@ -31,8 +31,44 @@
   
   .button-mobile {
     margin-top:20px !important;
-    border:2px solid purple !important;
+   
+  }
+
+  .big-title{
+    font-size: 50px !important; 
+  
   }
  
+  }
+
+  @media (max-width: 767px) {
+      #big-title{
+
+        font-size: 50px !important; 
+
+    }
+    #new-image {
+      height:100px;
+      width: 300px !important;
+      margin-bottom:40px;
+    }
+    .new-image-world {
+      margin-top:50px;
+     
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .new-image-world img {
+      margin-bottom:0;
+     
+    }
+    .new-padding {
+      padding-top:0 !important;
+  
+      margin-top:0 !important;
+    }
   }
 
