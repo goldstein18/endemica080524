@@ -72,3 +72,15 @@
     }
   }
 
+.main-slider-area {
+  display: block;
+}
+
+/* Retain the mobile-specific adjustments if needed */
+@media only screen and (max-width: 767px) {
+  .main-slider-area {
+      display: inline !important;
+  }
+}
+
+
